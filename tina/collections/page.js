@@ -8,6 +8,25 @@ export default {
   format: "mdx",
   fields: [
     {
+      type: "string",
+      name: "title",
+      label: "title",
+    },
+    {
+      type: "string",
+      name: "link",
+      label: "link",
+    },
+    {
+      type: "datetime",
+      name: "date",
+      label: "date",
+      ui: {
+        dateFormat: 'YYYY-MM-DD',
+        timeFormat: 'HH:MM:SS'
+      }
+    },
+    {
       name: "body",
       label: "Main Content",
       type: "rich-text",
